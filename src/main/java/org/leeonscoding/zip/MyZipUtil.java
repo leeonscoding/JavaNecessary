@@ -30,7 +30,7 @@ public class MyZipUtil {
                 fis.close();
             }
         } catch (IOException e) {
-            System.err.println(e);
+            System.err.println(e.getMessage());
         }
     }
 }
