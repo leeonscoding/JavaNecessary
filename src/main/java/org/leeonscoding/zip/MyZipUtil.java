@@ -10,7 +10,7 @@ import java.util.zip.ZipOutputStream;
 public class MyZipUtil {
     public void zip(List<String> fileList, String destinationPath) {
 
-        String outputFileName = Long.toString(System.currentTimeMillis())+".zip";
+        String outputFileName = System.currentTimeMillis() +".zip";
 
         String destination = destinationPath.concat("/")
                                             .concat(outputFileName);
@@ -30,7 +30,7 @@ public class MyZipUtil {
                 fis.close();
             }
         } catch (IOException e) {
-            System.err.println(e.toString());
+            System.err.println(e);
         }
     }
 }
